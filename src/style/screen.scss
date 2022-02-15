@@ -1,0 +1,94 @@
+@use '/src/style/01-settings/color.scss';
+
+html {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+body {
+  width: 55%;
+  margin: auto;
+  background-color: var(--global-background-color);
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.c-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6f7579;
+}
+
+.c-card {
+  background-color: var(--white);
+  padding: 20px 30px;
+  border: 1px solid;
+  font-size: 15px;
+  border-radius: var(--border-radius-lg);
+  border-color: var(--theme-border-color);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.034);
+}
+
+.c-card_info-available {
+  border-right: 2px solid var(--theme-border-color);
+  padding-right: 40px;
+}
+
+.c-card a {
+  text-decoration: none;
+  color: var(--theme-alpha);
+}
+
+.c-info_head {
+  gap: 5%;
+}
+
+.c-search {
+  width: 100%;
+  padding: 10px 5px;
+  border: 1px solid var(--theme-border-color);
+  border-radius: var(--border-radius);
+}
+
+.c-buttons {
+  border-top: 2px solid var(--theme-border-color);
+  padding-top: 20px;
+}
+
+.c-buttons button {
+  width: 10%;
+  height: 35px;
+  background-color: transparent;
+  color: rgb(147, 147, 147);
+  border: 1px solid var(--theme-border-color);
+  border-radius: var(--border-radius);
+}
+
+.c-buttons .c-save {
+  color: var(--white);
+  background-color: var(--theme-alpha);
+  border: 1px solid var(--theme-alpha);
+}
+
+.u-width-max {
+  width: 100%;
+}
+
+.u-width-half {
+  width: 50%;
+}
+
+.u-display-flex {
+  display: flex;
+}
+
+.u-justify-between {
+  justify-content: space-between;
+}
+
+.u-align-center {
+  align-items: center;
+}

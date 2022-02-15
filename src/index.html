@@ -5,8 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geoblocking</title>
+
+    <link rel="stylesheet" href="./style/screen.scss" />
+
+    <script type="module" src="./script/app.js"></script>
   </head>
   <body>
+    <p style="color: #c2ccd2">
+      SETTINGS > <span style="color: black">GEOBLOCKING</span>
+    </p>
     <h1>Geoblocking</h1>
+    <p class="c-description u-width-half">
+      Geo-blocking allows you to fully block all internet traffic to your
+      website from a specific country.
+    </p>
+    <div class="c-card">
+      <div class="c-info_head u-width-max u-display-flex u-justify-between">
+        <div class="c-card_info-available u-width-half">
+          <div class="u-display-flex u-justify-between u-align-center">
+            <p><b>Available countries</b></p>
+            <a href="">Move all to blocked</a>
+          </div>
+          <input
+            class="c-search"
+            type="search"
+            placeholder="search countries"
+          />
+          <div>
+            <div>
+              <div class="js-flag c-flag"></div>
+              <p>France</p>
+            </div>
+            <div>
+              <div class="js-flag c-flag"></div>
+              <p>Germany</p>
+            </div>
+            <div>
+              <div class="js-flag c-flag"></div>
+              <p>Sweden</p>
+            </div>
+            <div>
+              <div class="js-flag c-flag"></div>
+              <p>Italy</p>
+            </div>
+            <div>
+              <div class="js-flag c-flag"></div>
+              <p>Russia</p>
+            </div>
+            <div>
+              <div class="js-flag c-flag"></div>
+              <p>Spain</p>
+            </div>
+          </div>
+        </div>
+        <div class="c-card_info-blocked u-width-half">
+          <div class="u-display-flex u-justify-between u-align-center">
+            <p><b>Blocked countries</b></p>
+            <a href="">Move all to available</a>
+          </div>
+          <input
+            class="c-search"
+            type="search"
+            placeholder="search countries"
+          />
+          <div>
+            <div>
+              <div class="js-flag c-flag"></div>
+              <p>Canada</p>
+            </div>
+            <div>
+              <div class="js-flag c-flag"></div>
+              <p>Japan</p>
+            </div>
+            <div>
+              <div class="js-flag c-flag"></div>
+              <p>Switzerland</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-buttons u-display-flex u-justify-between">
+        <button>cancel</button>
+        <button class="c-save">save</button>
+      </div>
+    </div>
   </body>
 </html>
