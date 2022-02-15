@@ -1,0 +1,24 @@
+{
+  "name": "frontend-labo1-geoblocking",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "npx parcel",
+    "build": "npx parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DequekerEllen/Frontend-Labo1-geoBlocking.git"
+  },
+  "keywords": [],
+  "author": "ED",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DequekerEllen/Frontend-Labo1-geoBlocking/issues"
+  },
+  "homepage": "https://github.com/DequekerEllen/Frontend-Labo1-geoBlocking#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
