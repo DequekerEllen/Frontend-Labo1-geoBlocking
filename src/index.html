@@ -11,83 +11,128 @@
     <script type="module" src="./script/app.js"></script>
   </head>
   <body>
-    <p style="color: #c2ccd2">
-      SETTINGS > <span style="color: black">GEOBLOCKING</span>
-    </p>
-    <h1>Geoblocking</h1>
-    <p class="c-description u-width-half">
-      Geo-blocking allows you to fully block all internet traffic to your
-      website from a specific country.
-    </p>
-    <div class="c-card">
-      <div class="c-info_head u-width-max u-display-flex u-justify-between">
-        <div class="c-card_info-available u-width-half">
-          <div class="u-display-flex u-justify-between u-align-center">
-            <p><b>Available countries</b></p>
-            <a href="">Move all to blocked</a>
+    <main class="c-app">
+      <div>
+        <header class="c-navigation">
+          <p class="c-breadcrumbs">
+            <span class="c-breadcrumbs__trail">SETTINGS ></span> GEOBLOCKING
+          </p>
+
+          <h1 class="c-navigation__title">Geoblocking</h1>
+
+          <p class="c-navigation__description">
+            Geo-blocking allows you to fully block all internet traffic to your
+            website from a specific country.
+          </p>
+        </header>
+
+        <article class="c-card">
+          <div class="c-card__main">
+            <!-- HALF -->
+            <section class="c-card-half">
+              <header class="c-card-header">
+                <div class="c-card-header__segment">
+                  <h2 class="c-card-header__title">
+                    <b>Available countries</b>
+                  </h2>
+
+                  <button class="c-card-header__button js-move-to-blocked">
+                    Move all to blocked
+                  </button>
+                </div>
+                <div class="c-card-header__fake-input">
+                  <svg
+                    class="c-card-header__symbol"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <input
+                    class="c-card-header__input"
+                    type="text"
+                    placeholder="search countries"
+                  />
+                </div>
+              </header>
+
+              <div class="c-card__list-holder">
+                <ul class="c-card__list js-list-available">
+                  <!-- COUNTRY -->
+                  <li class="c-country">
+                    <button class="c-country__button">
+                      <div class="c-country__flag-holder">
+                        <img
+                          class="c-country__flag"
+                          src="https://flagcdn.com/h40/be.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="c-country__name">Belgium</p>
+                      <svg
+                        class="c-country__arrow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="black"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- HALF -->
+            <section class="c-card-half">
+              <header class="c-card-header">
+                <div class="c-card-header__segment">
+                  <h2 class="c-card-header__title">
+                    <b>Blocked countries</b>
+                  </h2>
+
+                  <button class="c-card-header__button js-move-to-available">
+                    Move all to available
+                  </button>
+                </div>
+                <div class="c-card-header__fake-input">
+                  <svg
+                    class="c-card-header__symbol"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <input
+                    class="c-card-header__input"
+                    type="text"
+                    placeholder="search countries"
+                  />
+                </div>
+              </header>
+
+              <div class="c-card__list-holder">
+                <ul class="c-card__list js-list-blocked">
+                  <!-- COUNTRY -->
+                </ul>
+              </div>
+            </section>
           </div>
-          <input
-            class="c-search"
-            type="search"
-            placeholder="search countries"
-          />
-          <div>
-            <div>
-              <div class="js-flag c-flag"></div>
-              <p>France</p>
-            </div>
-            <div>
-              <div class="js-flag c-flag"></div>
-              <p>Germany</p>
-            </div>
-            <div>
-              <div class="js-flag c-flag"></div>
-              <p>Sweden</p>
-            </div>
-            <div>
-              <div class="js-flag c-flag"></div>
-              <p>Italy</p>
-            </div>
-            <div>
-              <div class="js-flag c-flag"></div>
-              <p>Russia</p>
-            </div>
-            <div>
-              <div class="js-flag c-flag"></div>
-              <p>Spain</p>
-            </div>
-          </div>
-        </div>
-        <div class="c-card_info-blocked u-width-half">
-          <div class="u-display-flex u-justify-between u-align-center">
-            <p><b>Blocked countries</b></p>
-            <a href="">Move all to available</a>
-          </div>
-          <input
-            class="c-search"
-            type="search"
-            placeholder="search countries"
-          />
-          <div>
-            <div>
-              <div class="js-flag c-flag"></div>
-              <p>Canada</p>
-            </div>
-            <div>
-              <div class="js-flag c-flag"></div>
-              <p>Japan</p>
-            </div>
-            <div>
-              <div class="js-flag c-flag"></div>
-              <p>Switzerland</p>
-            </div>
-          </div>
-        </div>
+          <footer class="c-card__footer">
+            <button class="o-button o-button-secondary js-cancel">
+              cancel
+            </button>
+            <button class="o-button o-button-primary js-save">save</button>
+          </footer>
+        </article>
       </div>
-      <div class="c-buttons u-display-flex u-justify-between">
-        <button>cancel</button>
-        <button class="c-save">save</button>
-      </div>
-    </div>
+    </main>
   </body>
 </html>

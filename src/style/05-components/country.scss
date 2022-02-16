@@ -1,0 +1,31 @@
+.c-country {
+  &__button {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: var(--border-radius);
+  }
+  &__flag {
+    display: block;
+    height: 100%;
+    &-holder {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 1rem;
+      overflow: hidden;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+  }
+  &__name {
+    letter-spacing: 1px;
+  }
+  &__arrow {
+    height: 1rem;
+    margin-left: auto;
+    opacity: 0.6;
+    fill: none;
+    stroke: var(--theme-dark);
+  }
+}
