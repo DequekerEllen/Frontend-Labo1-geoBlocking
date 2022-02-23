@@ -1,7 +1,12 @@
 .c-app {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
   min-height: 100vh;
-  //   margin: 0 2rem;
+  margin: 0 2rem;
+}
+
+.c-app__center {
+  flex: 1;
+  padding: 1rem;
 }

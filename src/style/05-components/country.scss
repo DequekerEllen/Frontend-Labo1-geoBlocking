@@ -9,13 +9,17 @@
   &__flag {
     display: block;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+
     &-holder {
       width: 1.5rem;
       height: 1.5rem;
       margin-right: 1rem;
       overflow: hidden;
       border-radius: 100%;
-      object-fit: cover;
+
+      flex-shrink: 0;
     }
   }
   &__name {
@@ -27,5 +31,6 @@
     opacity: 0.6;
     fill: none;
     stroke: var(--theme-dark);
+    flex-shrink: 0;
   }
 }

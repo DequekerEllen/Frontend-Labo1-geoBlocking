@@ -8,12 +8,12 @@
 
     <link rel="stylesheet" href="./style/screen.scss" />
 
-    <script type="module" src="./script/app.js"></script>
+    <script type="module" src="./script/app.ts"></script>
   </head>
   <body>
     <main class="c-app">
-      <div>
-        <header class="c-navigation">
+      <div class="c-app__center">
+        <header class="o-container c-navigation">
           <p class="c-breadcrumbs">
             <span class="c-breadcrumbs__trail">SETTINGS ></span> GEOBLOCKING
           </p>
@@ -26,7 +26,7 @@
           </p>
         </header>
 
-        <article class="c-card">
+        <article class="o-container c-card">
           <div class="c-card__main">
             <!-- HALF -->
             <section class="c-card-half">
@@ -51,7 +51,7 @@
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                   </svg>
                   <input
-                    class="c-card-header__input"
+                    class="c-card-header__input js-search-available"
                     type="text"
                     placeholder="search countries"
                   />
@@ -111,7 +111,7 @@
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                   </svg>
                   <input
-                    class="c-card-header__input"
+                    class="c-card-header__input js-search-blocked"
                     type="text"
                     placeholder="search countries"
                   />
